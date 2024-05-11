@@ -17,7 +17,7 @@
 }
 
 body, html {
-    background-color: #0d0e12;
+    background-image: linear-gradient(to bottom, #323038, #0d0e12);
     height: 100vh;
     width: 10vw;
 }
@@ -39,10 +39,20 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) ;
+
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
-    background: #0d0e12 url(../imagens/galaxy.jpg) no-repeat;
+    display: block;
+    background: #323038 url(../imagens/galaxy.jpg) no-repeat;
     background-size: cover;
     height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
